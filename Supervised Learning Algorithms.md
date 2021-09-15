@@ -14,11 +14,11 @@ The most popular supervised learning tasks are: *Regression* and *Classification
   - Predicting the probability of cancer based on blood tests.
 - The line between these tasks is often fuzzy.
 
-Classification algorithms can be also devided to **hard** and **soft**:
+Classification algorithms can be also divided to **hard** and **soft**:
 - **Hard classification algorithms** predict whether a given data point is part of a particular class **without producing the probability estimation**.
 - **Soft classification algorithms** in turn, also estimate the class conditional **probabilities**.
 
-Classification algorithms can be also devided by the number of classes to classify:
+Classification algorithms can be also divided by the number of classes to classify:
 - **Binary classification** - only two classes.
 - **Multiclass classification** - more than two classes.
   - **Multilabel classification** (Multilabel-multiclass) - multiple classes, but classes are binary (people on image). Result - [0, 0, 1] or [1, 0, 1].
@@ -32,8 +32,8 @@ Instead, heuristic methods can be used to split a multi-class classification pro
 Next, the following algorithms will be reviewed or mentioned (note, that *all of them solve both classification and regression task*, except of *Linear Regression (only Regression)* and *Logistic Regression (only Classification*))*:
 - *Linear Regression*
 - *Logistic Regression*
-- *SVM* - Support Vector Machines
-- *kNN* - k-Nearest Neighbors
+- *Support Vector Machines*
+- *k-Nearest Neighbors*
 - *Decision Tree*
 - Ensemble methods:
   - *Bagging* and *Pasting*
