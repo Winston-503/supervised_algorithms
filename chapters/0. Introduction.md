@@ -29,7 +29,6 @@ Instead, heuristic methods can be used to split a multi-class classification pro
 - **OvR** (one-vs-rest) - sometimes **OvA** (one-vs-all) - you have to train N classifiers for N classes, but on full dataset.
 - **OvO** (one-vs-one) - you have to train N*(N-1)/2 classifiers for N classes, but on subsamples from your dataset. Better suited for unbalanced samples.
 
-
 Next, the following algorithms will be reviewed or mentioned (note, that *all of them solve both classification and regression task*, except of *Linear Regression (only Regression)* and *Logistic Regression (only Classification*))*:
 - *Linear Regression*
 - *Logistic Regression*
