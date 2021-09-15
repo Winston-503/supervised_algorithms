@@ -37,8 +37,7 @@ Next, the following algorithms will be reviewed or mentioned (note, that *all of
 - *Decision Tree*
 - Ensemble methods:
   - *Bagging* and *Pasting*
-  - *Random Forest*
-  - *Extra Trees*
+  - *Random Forest* and *Extra Trees*
   - *Boosting*
   - *Staking* and *Blending*
 
