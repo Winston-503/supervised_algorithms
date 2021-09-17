@@ -12,9 +12,9 @@ The most popular supervised learning tasks are: *Regression* and *Classification
   - Classifying news articles
 - The line between these tasks is sometimes fuzzy (predicting the probability of cancer based on blood tests)
 
-| ![classification_vs_regression_by_Yves_Matanga.jpg](./img/classification_vs_regression_by_Yves_Matanga.jpg) |
+| ![classification_vs_regression.JPG](./img/classification_vs_regression.JPG) |
 |:--:|
-| <b>Classification vs Regression. Image by Yves Matanga</b>|
+| <b>Classification vs Regression. Image by Author</b>|
 
 Classification algorithms can be also divided to **hard** and **soft**:
 - **Hard classification algorithms** predict whether a data point belongs to a particular class **without producing the probability estimation**.
