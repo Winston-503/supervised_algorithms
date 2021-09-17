@@ -19,9 +19,8 @@ The following algorithms are mentioned:
 - *Logistic Regression*
 - *Support Vector Machines*
 - *k-Nearest Neighbors*
-- *Decision Tree*
-- Ensemble methods:
-  - *Bagging* and *Pasting*
-  - *Random Forests* and *Extra Trees*
-  - *Boosting*
-  - *Staking* and *Blending*
+- *Decision Trees*
+- *Bagging* and *Pasting*
+- *Random Forests* and *Extra Trees*
+- *Boosting*
+- *Staking* and *Blending*
