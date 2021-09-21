@@ -7,9 +7,13 @@ To know more about a particular algorithm, just Google it or check for it in [sk
 
 The content is presented in two formats:
 - *.md  - to read in GitLab directly - [click here to read markdown](https://gitlab.com/Winston-90/supervised_algorithms/-/blob/main/Supervised%20Learning%20Algorithms.md)
-- *.pdf - to read offline or print - [click here to read pdf](https://gitlab.com/Winston-90/supervised_algorithms/-/blob/main/Supervised%20Learning%20Algorithms.pdf), [click here to download pdf](https://gitlab.com/Winston-90/supervised_algorithms/-/raw/main/Supervised%20Learning%20Algorithms.pdf?inline=false)
+- *.pdf - to read offline or print - [click here to read pdf](https://gitlab.com/Winston-90/supervised_algorithms/-/blob/main/Supervised%20Learning%20Algorithms.pdf)
 
 Click here to read [by chapters](https://gitlab.com/Winston-90/supervised_algorithms/-/tree/main/chapters).
+
+## Download pdf
+
+[Click here to download pdf](https://gitlab.com/Winston-90/supervised_algorithms/-/raw/main/Supervised%20Learning%20Algorithms.pdf?inline=false).
 
 ## Contents
 
