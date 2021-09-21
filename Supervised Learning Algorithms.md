@@ -93,7 +93,7 @@ Depends of some threshold different values of accuracy/recall can be obtained. T
 
 | ![sigmoid.jpg](./img/sigmoid.jpg) |
 |:--:|
-| <b>Sigmoid Function. Image from Wikipedia</b>|
+| <b>Sigmoid Function. [Public Domain](https://en.wikipedia.org/wiki/Sigmoid_function#/media/File:Logistic-curve.svg)</b>|
 
 Very similar **probit regression** uses a little different function - probit function instead of sigmoid.
 
@@ -114,7 +114,7 @@ In case of *regression task*, instead, it tries to draw a line to fit as many in
 
 | ![support_vectors.jpg](./img/support_vectors.jpg) |
 |:--:|
-| <b>Support Vectors. Image from Wikipedia</b>|
+| <b>Support Vectors. [Public Domain](https://en.wikipedia.org/wiki/Support-vector_machine#/media/File:SVM_margin.png)</b>|
 
 Since SVM requires calculating distances between points it also requires *feature scaling*.
 
@@ -128,7 +128,7 @@ The use of different kernels allows this algorithm to recover very complex depen
 
 | ![SVM_kernels.jpg](./img/SVM_kernels.jpg) |
 |:--:|
-| <b>SVM with different kernels and default parameters</b>|
+| <b>SVM with different kernels and default parameters. Image by Author</b>|
 
 One-class SVM also can be used for the *Anomaly Detection* problem.
 
@@ -155,7 +155,7 @@ For a new object we have to find k nearest neighbors. Definition of *nearest* de
 
 | ![knn.jpg](./img/knn.jpg) |
 |:--:|
-| <b>k-Nearest Neighbors algorithm. The result may differ depending on k. Image from Wikipedia</b>|
+| <b>k-Nearest Neighbors algorithm. The result may differ depending on k. [Public Domain](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm#/media/File:KnnClassification.svg)</b>|
 
 The most important hyperparameter is number of neighbors - k. A good initial approximation of k is to set *k to square root of data points number*, but, of course, k can be found with *Cross Validation*. *Classification* then is computed from a simple majority vote of the nearest neighbors of each point, *regression* - from a mean value of the nearest neighbors of each point.
 
@@ -184,11 +184,11 @@ The popular algorithms for building trees are:
 
 | ![decision_tree_classifier_regressor.jpg](./img/decision_tree_classifier_regressor.jpg) |
 |:--:|
-| <b>Decision Tree Classifier and Regressor</b>|
+| <b>Decision Tree Classifier and Regressor. Image by Author</b>|
 
 | ![decision_tree_structure.jpg](./img/decision_tree_structure.jpg) |
 |:--:|
-| <b>Decision Tree Structure using the example Decision Tree Classifier above</b>|
+| <b>Decision Tree Structure using the example Decision Tree Classifier above. Image by Author</b>|
 
 Different measures for calculating *information gain* can be used. Then decision tree algorithm use information gain to split a particular node:
 - *Entropy* - measure of disorder.
