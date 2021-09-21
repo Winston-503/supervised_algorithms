@@ -1,5 +1,7 @@
 # Supervised Learning Algorithms
 
+## Introduction
+
 *Supervised learning* is the machine learning task of learning a function that maps an input to an output based on example input-output pairs. 
 A supervised learning algorithm analyzes the training data and produces an inferred function, which can be used later for mapping new examples.
 
@@ -45,7 +47,7 @@ Next, the following algorithms will be reviewed or mentioned (note, that *all of
 
 # Simple Algorithms
 
-I use the phrase *simple algorithms* not in the sense that they are simply implemented (although some of them really are), but in the fact that these are separate algorithms, not *ensemble learning* that we will see later.
+I use the phrase *simple algorithms* not in the sense that they are simply to implement (although some of them really are), but in the fact that these are separate algorithms, not *ensemble learning* that we will see later.
 
 ## Linear Regression
 
@@ -67,19 +69,19 @@ Regularized regression can also be used like *feature selection* tool. Thanks to
 
 As mentioned earlier, *linear regression solve only regression task*. 
 
-Main hyperparameters:
+**Main hyperparameters**:
 - *feature engineering* and *feature selection*
 - regularization type and parameter
 - solver - optimization algorithm
 
-Pros:
+**Pros**:
 + Have few parameters, and learn fast
 + Can be configured using *stochastic gradient descent*, without the need to store all the samples in memory and can be used for *online learning*
 + More interpretable than complex models
 + Is well suited for problems with a small number of data points and large number of features
 + Is well suited for sparse data
 
-Cons:
+**Cons**:
 - Poorly restores complex dependencies
 - Requires data preprocessing 
 
@@ -130,16 +132,16 @@ The use of different kernels allows this algorithm to recover very complex depen
 
 One-class SVM also can be used for the *Anomaly Detection* problem.
 
-Main hyperparameters:
+**Main hyperparameters**:
 - kernel type
 - regularization parameter C - a penalty for each misclassified data point (usually 0.1 < C < 100)
 - regularization parameter gamma - controls regions separating different classes. Large gamma - too specific class regions (overfitting). (usually 0.0001 < gamma < 10)
 
-Pros:
+**Pros**:
 + One of the most powerful and flexible models
 + As linear model inherits the pros of linear regression
 
-Cons:
+**Cons**:
 - Requires data preprocessing
 - It scales well with number of features, but not samples, so works well only on small and medium-sized datasets
 
@@ -157,16 +159,16 @@ For a new object we have to find k nearest neighbors. Definition of *nearest* de
 
 The most important hyperparameter is number of neighbors - k. A good initial approximation of k is to set *k to square root of data points number*, but, of course, k can be found with *Cross Validation*. *Classification* then is computed from a simple majority vote of the nearest neighbors of each point, *regression* - from a mean value of the nearest neighbors of each point.
 
-Main hyperparameters:
+**Main hyperparameters**:
 - k - number of neighbors
 - distance metric
 
-Pros:
+**Pros**:
 + *Lazy learning* - we just have to load data in memory
 + Simple interpretation
 + Simple realization
 
-Cons:
+**Cons**:
 - Requires data preprocessing
 - Poorly restores complex dependencies (classification for highly overlapping data)
 - As any *metric algorithm* works badly with sparse high-dimensional data
@@ -194,18 +196,18 @@ Different measures for calculating *information gain* can be used. Then decision
 
 The so-called **decision tree pruning** shows itself better than simply limiting the length of the tree. This is the procedure when we build a tree of full depth, after that we remove insignificant nodes of the tree. However, this process is more resource-intensive.
 
-Main hyperparameters:
+**Main hyperparameters**:
 - maximum depth of the tree - the less the less overfitting, usually 10-20
 - minimum number of objects in a leaf - the greater the less overfitting, usually 20+
 
-Pros:
+**Pros**:
 + Simple interpretation
 + Simple realization
 + Computational simplicity
 + Does not require features preprocessing and can handle with missing values
 + Feature importance can be calculated using information gain
 
-Cons:
+**Cons**:
 - Unstable and variable (investigation of greedy algorithm) - a small change in the input data can completely change the structure of the tree
 - High sensitivity to the content of the training set and noise
 - Poorly restores complex (non-linear) dependencies
@@ -238,13 +240,13 @@ The more variable the algorithms are, the lower the correlation of their predict
 
 If we are using bagging, there is a chance that a sample would never be selected, while others may be selected multiple times. In general, for a big dataset, 37% of its samples are never selected and we could use it to test our model. This is called **Out-of-Bag scoring**, or **OOB Scoring**.
 
-Main hyperparameters:
+**Main hyperparameters**:
 - type of models
 - n_estimators - the number of models in the ensemble
 - max_samples - the number of samples to take from train set to train each base model
 - max_features - the number of features to take from train set to train each base model
 
-Pros:
+**Pros**:
 + Very good quality
 + Training process can be simply parallelized because models learns independently from each other
 + Does not require features preprocessing and built-in assessment of the importance of features (in case of trees)
@@ -252,7 +254,7 @@ Pros:
 + Resistant to outliers
 + *OOB Scoring* allows to use full dataset without splitting it into train and validation
 
-Cons:
+**Cons**:
 - Complexity of interpretation
 - Does not cope well with a very large number of features or for sparse data
 - Trains and makes predictions significantly slower than linear models
@@ -271,7 +273,7 @@ As known **Isolation Forest** algorithm also can be used for the *Anomaly detect
 
 **Inherits the pros and cons of bagging**.
 
-Main hyperparameters:
+**Main hyperparameters**:
 - n_estimators - the number of trees in the ensemble - the more the better
 - max_features - the number of features to draw from train set to train each base tree - `n/3` for regression and `sqrt(n)` for classification is recommended
 - max_depth - the maximum depth of the tree
@@ -315,14 +317,14 @@ The general idea of boosting can be implemented in different ways. Three the mos
 
 Since the main implementations of boosting still use decision trees as basic models, boosting, like random forest, determines the importance of features. But the popularity of the boosting creates a lot of libraries that allows you to do more detailed analysis (for example XGBFIR library allows you to analyse not one feature importance, but also their double and even triple combinations).
 
-Main hyperparameters:
+**Main hyperparameters**:
 - Types of models and ways of their interaction with each other
 
-Pros:
+**Pros**:
 + Very good quality, usually better than random forest
 + Built-in assessment of the importance of features
 
-Cons:
+**Cons**:
 - Learning is slower than random forest, because learning process has to be strictly sequential (although the implementations like XGBoost or LightGBM can argue with this)
 - Prone to overfitting
 - Works well only with sufficiently large datasets
@@ -343,15 +345,15 @@ Differences from boosting:
 
 The usage of a simple linear model as the meta-model often gives stacking the colloquial name **blending**.
 
-Main hyperparameters:
+**Main hyperparameters**:
 - Types of models and ways of their interaction with each other
 
-Proc:
+**Pros**:
 + Improves the quality of the model when nothing else helps
 + Allows you to effectively mix models of different classes, combining their strengths
 + Help you win gold on Kaggle
 
-Cons:
+**Cons**:
 - High computational complexity 
 - Complexity of interpretation
 - Сan easily overfit with information leak
