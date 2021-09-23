@@ -367,7 +367,7 @@ Is your data sparse? If yes, then you will have to use linear methods. This is u
 
 If your data is dense, then you are more lucky. Now everything depends on their amount. If there are a lot of them, then use a *boosting*, otherwise - *random forest*. Both of these algorithms are powerful, resistant to noise and will show you a good quality, but they will take a long time to learn and predict. Also, remember that boosting is prone to overfitting.
 
-| ![supervised_learinig_algorithm_selection.JPG](./img/supervised_learinig_algorithm_selection.JPG) |
+| ![supervised_learining_algorithm_selection.JPG](./img/supervised_learining_algorithm_selection.JPG) |
 |:--:|
 | <b>Block diagram for algorithm selection. Image by Author</b>|
 
