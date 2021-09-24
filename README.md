@@ -1,5 +1,7 @@
 # Supervised Learning algorithms cheat sheet
 
+![supervised_preview.jpg](../img/supervised_preview.jpg)
+
 This repository provides cheat sheets for different supervised learning machine learning concepts and algorithms.
 This is not a complete tutorial, but it can help you better understand the structure of machine learning or to refresh your memory.
 
