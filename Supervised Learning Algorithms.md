@@ -43,7 +43,7 @@ Next, the following algorithms will be reviewed or mentioned (note, that *all of
   - *Bagging* and *Pasting*
   - *Random Forest* and *Extra Trees*
   - *Boosting*
-  - *Staking* and *Blending*
+  - *Stacking* and *Blending*
 
 # Simple Algorithms
 
@@ -180,7 +180,7 @@ At each step, the train set is divided into two (or more) parts, depending on a 
 The popular algorithms for building trees are: 
 - **ID3** (one of the oldest algorithm, *Iterative Dichotomiser 3* was invented by *Ross Quinlan*), 
 - **C4.5, C5.0** (an extensions of ID3 algorithm, they were developed by the same person and consists in *pruning* the tree after using ID3), 
-- **CART** (*Classification And Regression Tree* is optimized for both classification (*Gimi Inpurity* as measure) and regression (*MSE* as measure) trees and is implemented in scikit-learn).
+- **CART** (*Classification And Regression Tree* is optimized for both classification (*Gini Inpurity* as measure) and regression (*MSE* as measure) trees and is implemented in scikit-learn).
 
 | ![decision_tree_classifier_regressor.jpg](./img/decision_tree_classifier_regressor.jpg) |
 |:--:|
@@ -329,15 +329,15 @@ Since the main implementations of boosting still use decision trees as basic mod
 - Prone to overfitting
 - Works well only with sufficiently large datasets
 
-## Staking
+## Stacking
 
 The architecture of a stacking model involves **two or more base models**, often referred to as *level-0 models*, and a **meta-model that combines the predictions of the base models**, referred to as a *level-1 model*.
 - *Level-0 Models (Base-Models)*: Training data is divided into `K` folds. Then `K` models train on the `K-1` folds each.
 - *Level-1 Model (Meta-Model)*: Model that learns how to combine the predictions of the base models in the best possible way.
 
-| ![staking.jpg](./img/staking.jpg) |
+| ![stacking.jpg](./img/stacking.jpg) |
 |:--:|
-| <b>Staking. Image by Author</b>|
+| <b>Stacking. Image by Author</b>|
 
 Differences from boosting:
 - **Unlike bagging**, in stacking, the **models are typically different** (e.g. not all decision trees).

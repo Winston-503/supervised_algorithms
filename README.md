@@ -29,4 +29,4 @@ The following algorithms are mentioned:
 - *Bagging* and *Pasting*
 - *Random Forests* and *Extra Trees*
 - *Boosting*
-- *Staking* and *Blending*
+- *Stacking* and *Blending*
