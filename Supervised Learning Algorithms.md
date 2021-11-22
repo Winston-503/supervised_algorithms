@@ -228,7 +228,7 @@ When `X` is formed **with replacement** algorithm is called **bagging**, and whe
 When this model does prediction, really, it gets `n` predictions from `n` different models and aggregates them.
 *Classification* is computed from a simple majority vote of the models and *regression* is computed from a mean value of the models' predictions.
 
-| ![bagging.jpg](./img/bagging.jpg) |
+| ![bagging.png](./img/bagging.png) |
 |:--:|
 | <b>Bagging. Image by Author</b>|
 
@@ -295,7 +295,7 @@ It can often achieve **as good or better performance than the random forest algo
 
 A boosting is **an ensemble of weak algorithms** (the prediction accuracy is slightly better than random) that are trained **sequentially and each subsequent one considers the error of the previous one**.
 
-| ![boosting.jpg](./img/boosting.jpg) |
+| ![boosting.png](./img/boosting.png) |
 |:--:|
 | <b>Boosting. Image by Author</b>|
 
@@ -335,7 +335,7 @@ The architecture of a stacking model involves **two or more base models**, often
 - *Level-0 Models (Base-Models)*: Training data is divided into `K` folds. Then `K` models train on the `K-1` folds each.
 - *Level-1 Model (Meta-Model)*: Model that learns how to combine the predictions of the base models in the best possible way.
 
-| ![stacking.jpg](./img/stacking.jpg) |
+| ![stacking.png](./img/stacking.png) |
 |:--:|
 | <b>Stacking. Image by Author</b>|
 
@@ -367,7 +367,7 @@ Is your data sparse? If yes, then you will have to use linear methods. This is u
 
 If your data is dense, then you are more lucky. Now everything depends on their amount. If there are a lot of them, then use a *boosting*, otherwise - *random forest*. Both of these algorithms are powerful, resistant to noise and will show you a good quality, but they will take a long time to learn and predict. Also, remember that boosting is prone to overfitting.
 
-| ![supervised_learning_algorithm_selection.JPG](./img/supervised_learning_algorithm_selection.JPG) |
+| ![supervised_learning_algorithm_selection.png](./img/supervised_learning_algorithm_selection.png) |
 |:--:|
 | <b>Block diagram for algorithm selection. Image by Author</b>|
 
