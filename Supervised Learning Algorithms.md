@@ -223,7 +223,7 @@ Ensemble methods (also **ensemble learning**) are techniques that create multipl
 
 **Bagging** stands for *bootstrap aggregating*.
 
-When we have a train set `X_train (N x M) N data points and M features` then we train `n` trees on `X`, where `X (N x M)` is a random subsample of `X_train` with the same size.
+When we have a train set `X_train (N x M) N data points and M features` then we train `n` models on `X`, where `X (N x M)` is a random subsample of `X_train` with the same size.
 When `X` is formed **with replacement** algorithm is called **bagging**, and when `X` is formed **without replacement** algorithm is called **pasting**.
 When this model does prediction, really, it gets `n` predictions from `n` different models and aggregates them.
 *Classification* is computed from a simple majority vote of the models and *regression* is computed from a mean value of the models' predictions.
