@@ -1,4 +1,4 @@
-# Supervised Learning algorithms cheat sheet
+# Supervised Learning algorithms cheat sheet 
 
 ![supervised_preview.jpg](../img/supervised_preview.jpg)
 
